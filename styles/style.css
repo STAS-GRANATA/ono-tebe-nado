@@ -54,7 +54,6 @@
 .header__link {
   text-decoration: underline;
   text-underline-position: under;
-  border-bottom: 1px solid;
 }
 
 .header_link_active {
@@ -72,8 +71,8 @@
 }
 
 .header__address {
-  display: grid;
-  justify-content: end;
+  justify-self: end;
+  max-width: 240px;
 }
 
 .address__decor {
@@ -88,26 +87,25 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1440px;
-  max-height: 763.939px;
   color: #ffffff;
+  min-height: 757px;
   z-index: 1;
 }
 
 .cover_title {
   display: flex;
-  padding: 165px 50px 76px;
+  padding: 165px 50px 103px;
   flex-direction: column;
   row-gap: 20px;
   font-size: 100px;
-  line-height: 115%;
+  line-height: 100%;
   letter-spacing: 30px;
   text-transform: uppercase;
 }
 
 .aligned-text {
   display: block;
-  line-height: 125%;
+  line-height: 115%;
 }
 
 .aligned-text_center {
@@ -131,7 +129,6 @@
   justify-content: end;
   align-items: center;
   padding-right: 50px;
-  padding-bottom: 200px;
   column-gap: 78px;
   text-transform: uppercase;
   font-size: 40px;
@@ -145,7 +142,6 @@
   word-spacing: 19px;
   z-index: 1;
   line-height: 28px;
-
 }
 
 .bet-button {
@@ -170,7 +166,6 @@
   margin-left: 50px;
   margin-right: 50px;
   max-width: 1340px;
-  max-height: 579px;
 } 
 
 .lots__heading {
@@ -230,6 +225,7 @@
   font-weight: 700;
   line-height: 120%;
   text-decoration-line: underline;
+  text-underline-position: under;
   text-transform: uppercase;
 }
 
@@ -243,12 +239,14 @@
 
 .lots__look-more-link {
   width: 192px;
-  height: 25px;
+  min-height: 25px;
   margin-left: 40px;
   margin-top: 30px;
   font-size: 20px;
   font-weight: 400;
   line-height: normal; 
+  text-decoration-line: underline;
+  text-underline-position: under;
 }
 
 /*------------- about -------------*/
@@ -257,10 +255,9 @@
   margin: 180px 50px;
 }
 
-.about__column{
+.about__columns {
   display: grid;
-  grid-template-columns: 430px 1fr;
-  
+  grid-template-columns: 430px 1fr; 
 }
 
 .about__logo {
@@ -285,6 +282,7 @@
 }
 
 .about__text {
+  display: grid;
   padding-left: 25px;
   padding-top: 3px;
   grid-column-start: 2;
@@ -293,11 +291,8 @@
   grid-row-end: 3;
   font-size: 20px;
   font-weight: 400;
-  line-height: normal; 
-}
-
-.padding {
-  padding-top: 25px;
+  line-height: normal;
+  row-gap: 25px; 
 }
 
 /*------------- footer (подвал) -------------*/
@@ -346,7 +341,7 @@
 }
 
 .footer__social-list-item {
-  max-width: 50px;
+  max-width: 48px;
   object-fit: fill;
 }
 
