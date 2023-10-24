@@ -63,6 +63,7 @@
 .header__logo {
   display: grid;
   justify-content: center;
+  padding-bottom: 4px;
 }
 
 .header__logo-image {
@@ -94,26 +95,27 @@
 
 .cover_title {
   display: flex;
-  padding: 165px 50px 103px;
+  padding: 165px 50px 135px;
   flex-direction: column;
   row-gap: 20px;
   font-size: 100px;
-  line-height: 100%;
+  line-height: 115%;
   letter-spacing: 30px;
   text-transform: uppercase;
 }
 
 .aligned-text {
   display: block;
-  line-height: 115%;
 }
 
 .aligned-text_center {
   align-self: center;
+  line-height: 100%;
 }
 
 .aligned-text_right {
   text-align: right;
+  line-height: 100%;
 }
 
 .letter-spacing-extended {
@@ -170,7 +172,7 @@
 
 .lots__heading {
   padding-left: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 27px;
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
@@ -252,7 +254,7 @@
 /*------------- about -------------*/
 .about { 
   width: 1340px;
-  margin: 180px 50px;
+  margin: 181px 50px;
 }
 
 .about__columns {
@@ -284,7 +286,7 @@
 .about__text {
   display: grid;
   padding-left: 25px;
-  padding-top: 3px;
+  padding-top: 8px;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
